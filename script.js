@@ -44,39 +44,7 @@ const lines = [
 "Tu Haseen Tera Naam Haseen Ae",
 "Tere Ishq Da Jaam Haseen Ae",
 "Eh Be-Matlabi Zindagi",
-"Jadon Di Tere Naam Haseen Ae",
-
-"Tere Ishq Da Jaam Haseen Ae",
-"Subah Haseen Meri Shaam Haseen Ae",
-"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
-
-"Tere Ishq Da Jaam Haseen Ae LyricsRead"
-"Subah Haseen Meri Shaam Haseen Ae",
-"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
-
-"Ohnu Kiven Na Hove Pyar Tere Naal Ni",
-"Jehne Vekh Leya Hasdi Nu Ik Vaar Ni",
-"Panjvaan Mile Taan Oh Vi Tera Karda",
-"Pehla Hi Aa Tere Naam Din Chaar Ni",
-
-"Ohnu Kiven Na Hove Pyar Tere Naal Ni",
-"Jehne Vekh Leya Hasdi Nu Ik Vaar Ni",
-"Panjvaan Mile Taan Oh Vi Tera Karda",
-"Pehla Hi Aa Tere Naam Din Chaar Ni",
-
-"Tu Jo Devin Paigham Haseen Ae",
-"Khaas Hoye Ya Aam Haseen Ae",
-"Tere Naal Jo Pal Lange",
-"Oh Pal Da Anjaam Haseen Ae",
-
-"Tere Ishq Da Jaam Haseen Ae LyricsRead"
-"Subah Haseen Meri Shaam Haseen Ae",
-"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
-
-
-"Tere Ishq Da Jaam Haseen Ae LyricsRead"
-"Subah Haseen Meri Shaam Haseen Ae",
-"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
+"Jadon Di Tere Naam Haseen Ae"
 
 ];
 
@@ -134,5 +102,6 @@ function startConfetti() {
 
   setInterval(draw, 30);
 }
+
 
 
