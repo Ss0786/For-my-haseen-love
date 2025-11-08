@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Haseen 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts"></div>
+
+  <div class="card">
+    <div id="question1" class="question">Tap here 💌</div>
+    <div id="question2" class="question hidden">Tap here again 💖</div>
+    <button id="revealBtn" class="hidden">Reveal your gift 🎁</button>
+
+    <div id="gift" class="hidden">
+      <div class="music-container">
+        <iframe
+          id="music"
+          width="280"
+          height="157"
+          src="https://www.youtube.com/embed/M9oqpZq_gfw?autoplay=1&loop=1&playlist=M9oqpZq_gfw"
+          title="Haseen - Talwiinder (Official Video)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <h2 id="lyrics" class="lyrics"></h2>
+      <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="Cute Panda" class="panda" />
+      <p class="message">You’re my Haseen one 🌸 The reason my world feels like a dream 💕</p>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
