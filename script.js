@@ -23,10 +23,61 @@ revealBtn.addEventListener('click', () => {
 
 // 🌸 Vibe lines inspired by “Haseen – Talwiinder”
 const lines = [
-  "Tu haseen tera naam haseen ae 💫",
-  "Tere Ishq Da Jaam Haseen Ae🌸",
-  "Eh be-matlabi zindagi 💖",
-  "Jado di tere naam haseen ae🐼💕",
+"Tere Ishq Da Jaam Haseen Ae",
+"Subah Haseen Meri Shaam Haseen Ae",
+"Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae",
+
+"Tere Ishq Da Jaam Haseen Ae",
+"Subah Haseen Meri Shaam Haseen Ae",
+"Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae",
+
+"Rang Agge Naalon Pehlaan Vadh Dikhan Lagge Ne",
+"Kiven Sohne Hone Supne Vi Sikhan Lagge Ne",
+"Pehlaan Horaan Baare Likhde Si Gallan Jo",
+"Hun Gane Tere Mere Utte Likhan Lagge Ne",
+
+"Rang Agge Naalon Pehlaan Vadh Dikhan Lagge Ne"
+"Kiven Sohne Hone Supne Vi Sikhan Lagge Ne"
+"Pehlaan Horaan Baare Likhde Si Gallan Jo"
+"Hun Gane Tere Mere Utte Likhan Lagge Ne"
+
+"Tu Haseen Tera Naam Haseen Ae",
+"Tere Ishq Da Jaam Haseen Ae",
+"Eh Be-Matlabi Zindagi",
+"Jadon Di Tere Naam Haseen Ae",
+
+"Tere Ishq Da Jaam Haseen Ae",
+"Subah Haseen Meri Shaam Haseen Ae",
+"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
+
+"Tere Ishq Da Jaam Haseen Ae LyricsRead"
+"Subah Haseen Meri Shaam Haseen Ae",
+"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
+
+"Ohnu Kiven Na Hove Pyar Tere Naal Ni",
+"Jehne Vekh Leya Hasdi Nu Ik Vaar Ni",
+"Panjvaan Mile Taan Oh Vi Tera Karda",
+"Pehla Hi Aa Tere Naam Din Chaar Ni",
+
+"Ohnu Kiven Na Hove Pyar Tere Naal Ni",
+"Jehne Vekh Leya Hasdi Nu Ik Vaar Ni",
+"Panjvaan Mile Taan Oh Vi Tera Karda",
+"Pehla Hi Aa Tere Naam Din Chaar Ni",
+
+"Tu Jo Devin Paigham Haseen Ae",
+"Khaas Hoye Ya Aam Haseen Ae",
+"Tere Naal Jo Pal Lange",
+"Oh Pal Da Anjaam Haseen Ae",
+
+"Tere Ishq Da Jaam Haseen Ae LyricsRead"
+"Subah Haseen Meri Shaam Haseen Ae",
+"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
+
+
+"Tere Ishq Da Jaam Haseen Ae LyricsRead"
+"Subah Haseen Meri Shaam Haseen Ae",
+"Eh Be-Matlabi Zindagi Jadon Di Tere Naam",
+
 ];
 
 let lineIndex = 0;
@@ -83,4 +134,5 @@ function startConfetti() {
 
   setInterval(draw, 30);
 }
+
 
