@@ -23,8 +23,8 @@ revealBtn.addEventListener('click', () => {
 
 // 🌸 Vibe lines inspired by “Haseen – Talwiinder”
 const lines = [
-  "Tere ishq da jaam haseen ae 💫",
-  "Subha haseen meri shaam haseen ae🌸",
+  "Tu haseen tera naam haseen ae 💫",
+  "Tere Ishq Da Jaam Haseen Ae🌸",
   "Eh be-matlabi zindagi 💖",
   "Jado di tere naam haseen ae🐼💕",
 ];
@@ -83,3 +83,4 @@ function startConfetti() {
 
   setInterval(draw, 30);
 }
+
