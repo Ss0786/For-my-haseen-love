@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lyricsContainer = document.getElementById("lyrics");
   const soundcloudFrame = document.getElementById("soundcloud-frame");
 
-  // 🎀 Handle each "Tap here" button
+  // Handle tap buttons
   questionButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       btn.textContent = "💖 Answered!";
@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🎁 Reveal gift and play song
+  // Reveal section and start music
   revealButton.addEventListener("click", () => {
     revealButton.style.display = "none";
     giftSection.style.display = "block";
     musicPlayer.style.display = "block";
 
-    // 🌸 Autoplay SoundCloud song
+    // 🎵 Autoplay SoundCloud playlist
     soundcloudFrame.src =
       "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/inder-kirat/sets/haseen-talwinder-new-song&color=%23ff66a3&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true";
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showLyrics();
   });
 
-  // 🎶 Lyrics scroll effect
+  // Lyrics animation
   function showLyrics() {
     const lyrics = [
       "🎶 Tere Ishq Da Jaam Haseen Ae 💕",
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 4000);
   }
 
-  // 🎊 Simple pink confetti
+  // Pink confetti
   function startConfetti() {
     for (let i = 0; i < 100; i++) {
       const confetti = document.createElement("div");
