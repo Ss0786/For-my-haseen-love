@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For My Haseen 💖</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Card for My Love 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h1>💝 My Special Gift for You 💝</h1>
 
-  <!-- Hidden YouTube player -->
-<div id="music-player" style="display:none;">
-  <iframe 
-    id="ytplayer"
-    width="0" 
-    height="0"
-    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/talwiinder/haseen-talwiinder-prod-by-nds&auto_play=true"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-  </iframe>
-</div>
+    <div class="questions">
+      <button class="question-btn">Tap here (1)</button>
+      <button class="question-btn">Tap here (2)</button>
+    </div>
 
-  
-  <div class="hearts"></div>
+    <button id="reveal-btn" style="display: none;">🎁 Reveal your gift 💕</button>
 
-  <div class="card">
-    <div id="question1" class="question">Tap here 💌</div>
-    <div id="question2" class="question hidden">Tap here again 💖</div>
-    <button id="revealBtn" class="hidden">Reveal your gift 🎁</button>
+    <div id="gift-section" style="display: none;">
+      <h2>You're my favorite person in the world 💗</h2>
+      <img src="https://i.imgur.com/R9aU2xH.png" alt="Cute Panda" class="panda">
+      <div id="lyrics" class="lyrics"></div>
+    </div>
 
-    <div id="gift" class="hidden">
-      <div class="music-container">
-        <iframe
-          id="music"
-          width="280"
-          height="157"
-          src="https://youtube.com/embed/shorts/vQlbFqsMshgNR74v?autoplay=1&loop=1"
-          title="Haseen - Talwiinder (Official Video)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-      <h2 id="lyrics" class="lyrics"></h2>
-      <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="Cute Panda" class="panda" />
-      <p class="message">You’re my Haseen one 🌸 The reason my world feels like a dream 💕</p>
+    <!-- Hidden SoundCloud Player -->
+    <div id="music-player" style="display: none;">
+      <iframe 
+        width="100%" height="120"
+        scrolling="no" frameborder="no"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/inder-kirat/sets/haseen-talwinder-new-song&color=%23ff66a3&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+      </iframe>
     </div>
   </div>
 
-  <canvas id="confetti"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
