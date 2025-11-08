@@ -34,11 +34,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show lyrics gradually
     const lyrics = [
-      "🎶 Haseen lagti hai tu, jab hasi karti hai 💕",
-      "Dil ye keh raha hai, bas tu hi meri hai 💖",
-      "Pal pal tere bina, lagta adhura sa hai 🌸",
-      "Sun le zara, meri jaan, ye dil tera hi hai 💫"
-    ];
+  "🎶 Tere Ishq Da Jaam Haseen Ae 💕",
+  "Subah Haseen Meri Shaam Haseen Ae 🌅",
+  "Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae 💗",
+  "",
+  "Tere Ishq Da Jaam Haseen Ae 💕",
+  "Subah Haseen Meri Shaam Haseen Ae 🌸",
+  "Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae 💞",
+  "",
+  "Rang Agge Naalon Pehlaan Vadh Dikhan Lagge Ne 🎨",
+  "Kiven Sohne Hone Supne Vi Sikhan Lagge Ne 🌙",
+  "Pehlaan Horaan Baare Likhde Si Gallan Jo ✍️",
+  "Hun Gane Tere Mere Utte Likhan Lagge Ne 💕",
+  "",
+  "Tu Haseen Tera Naam Haseen Ae 🌸",
+  "Tere Ishq Da Jaam Haseen Ae 💖",
+  "Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae 💫",
+  "",
+  "Ohnu Kiven Na Hove Pyar Tere Naal Ni 💞",
+  "Jehne Vekh Leya Hasdi Nu Ik Vaar Ni 💗",
+  "Panjvaan Mile Taan Oh Vi Tera Karda 💕",
+  "Pehla Hi Aa Tere Naam Din Chaar Ni 🌹",
+  "",
+  "Tu Jo Devin Paigham Haseen Ae 💌",
+  "Khaas Hoye Ya Aam Haseen Ae 💖",
+  "Tere Naal Jo Pal Lange ⏳",
+  "Oh Pal Da Anjaam Haseen Ae 💫",
+  "",
+  "Tere Ishq Da Jaam Haseen Ae 🎶",
+  "Subah Haseen Meri Shaam Haseen Ae 🌅",
+  "Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae 💕"
+];
+
 
     let index = 0;
     const lyricInterval = setInterval(() => {
@@ -68,3 +95,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
