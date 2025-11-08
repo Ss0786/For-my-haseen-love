@@ -91,4 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
       confetti.style.left = Math.random() * 100 + "vw";
       confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
       confetti.style.backgroundColor =
-        ["#ffb6c1", "#ffc0cb", "#ff69b4", "#ffe4e1"][Math.floor(Math.]()
+        ["#ffb6c1", "#ffc0cb", "#ff69b4", "#ffe4e1"][Math.floor(Math.random() * 4)];
+      document.body.appendChild(confetti);
+      setTimeout(() => confetti.remove(), 5000);
+    }
+  }
+});
