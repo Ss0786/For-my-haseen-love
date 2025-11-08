@@ -1,107 +1,70 @@
-const q1 = document.getElementById('question1');
-const q2 = document.getElementById('question2');
-const revealBtn = document.getElementById('revealBtn');
-const gift = document.getElementById('gift');
-const lyrics = document.getElementById('lyrics');
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+  const questionButtons = document.querySelectorAll(".question-btn");
+  const revealButton = document.getElementById("reveal-btn");
+  const giftSection = document.getElementById("gift-section");
+  const musicPlayer = document.getElementById("music-player");
+  const lyricsContainer = document.getElementById("lyrics");
 
-q1.addEventListener('click', () => {
-  q1.classList.add('hidden');
-  q2.classList.remove('hidden');
-});
+  // Step 1: Handle each question button tap
+  questionButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      btn.textContent = "💖 Answered!";
+      btn.disabled = true;
 
-q2.addEventListener('click', () => {
-  q2.classList.add('hidden');
-  revealBtn.classList.remove('hidden');
-});
-
-revealBtn.addEventListener('click', () => {
-  revealBtn.classList.add('hidden');
-  gift.classList.remove('hidden');
-  showLyrics();
-  startConfetti();
-});
-
-// 🌸 Vibe lines inspired by “Haseen – Talwiinder”
-const lines = [
-"Tere Ishq Da Jaam Haseen Ae",
-"Subah Haseen Meri Shaam Haseen Ae",
-"Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae",
-
-"Tere Ishq Da Jaam Haseen Ae",
-"Subah Haseen Meri Shaam Haseen Ae",
-"Eh Be-Matlabi Zindagi Jadon Di Tere Naam Haseen Ae",
-
-"Rang Agge Naalon Pehlaan Vadh Dikhan Lagge Ne",
-"Kiven Sohne Hone Supne Vi Sikhan Lagge Ne",
-"Pehlaan Horaan Baare Likhde Si Gallan Jo",
-"Hun Gane Tere Mere Utte Likhan Lagge Ne",
-
-"Rang Agge Naalon Pehlaan Vadh Dikhan Lagge Ne"
-"Kiven Sohne Hone Supne Vi Sikhan Lagge Ne"
-"Pehlaan Horaan Baare Likhde Si Gallan Jo"
-"Hun Gane Tere Mere Utte Likhan Lagge Ne"
-
-"Tu Haseen Tera Naam Haseen Ae",
-"Tere Ishq Da Jaam Haseen Ae",
-"Eh Be-Matlabi Zindagi",
-"Jadon Di Tere Naam Haseen Ae"
-
-];
-
-let lineIndex = 0;
-function showLyrics() {
-  lyrics.textContent = "";
-  const interval = setInterval(() => {
-    if (lineIndex < lines.length) {
-      lyrics.textContent = lines[lineIndex];
-      lineIndex++;
-    } else {
-      clearInterval(interval);
-    }
-  }, 4000);
-}
-
-// 🎊 Confetti animation
-function startConfetti() {
-  const canvas = document.getElementById('confetti');
-  const ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  const confetti = [];
-
-  for (let i = 0; i < 150; i++) {
-    confetti.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      r: Math.random() * 6 + 2,
-      d: Math.random() * 2 + 1,
-      color: `hsl(${Math.random() * 360}, 70%, 70%)`
-    });
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    confetti.forEach((p) => {
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, false);
-      ctx.fillStyle = p.color;
-      ctx.fill();
-    });
-    update();
-  }
-
-  function update() {
-    confetti.forEach((p) => {
-      p.y += p.d;
-      if (p.y > canvas.height) {
-        p.y = 0;
-        p.x = Math.random() * canvas.width;
+      // Once all question buttons are answered, show the reveal button
+      const allAnswered = Array.from(questionButtons).every(b => b.disabled);
+      if (allAnswered) {
+        revealButton.style.display = "block";
+        revealButton.classList.add("pop");
       }
     });
+  });
+
+  // Step 2: When "Reveal your gift 💝" is clicked
+  revealButton.addEventListener("click", () => {
+    revealButton.style.display = "none";
+    giftSection.style.display = "block";
+
+    // Show music player
+    musicPlayer.style.display = "block";
+
+    // Add confetti effect 🎉
+    startConfetti();
+
+    // Show lyrics gradually
+    const lyrics = [
+      "🎶 Haseen lagti hai tu, jab hasi karti hai 💕",
+      "Dil ye keh raha hai, bas tu hi meri hai 💖",
+      "Pal pal tere bina, lagta adhura sa hai 🌸",
+      "Sun le zara, meri jaan, ye dil tera hi hai 💫"
+    ];
+
+    let index = 0;
+    const lyricInterval = setInterval(() => {
+      if (index < lyrics.length) {
+        const line = document.createElement("p");
+        line.textContent = lyrics[index];
+        lyricsContainer.appendChild(line);
+        index++;
+      } else {
+        clearInterval(lyricInterval);
+      }
+    }, 4000); // show a new line every 4 seconds
+  });
+
+  // Simple confetti animation 🎊
+  function startConfetti() {
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+      confetti.style.backgroundColor =
+        ["#ffb6c1", "#ffc0cb", "#ff69b4", "#ffe4e1"][Math.floor(Math.random() * 4)];
+      document.body.appendChild(confetti);
+
+      setTimeout(() => confetti.remove(), 5000);
+    }
   }
-
-  setInterval(draw, 30);
-}
-
-
-
+});
